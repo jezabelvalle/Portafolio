@@ -1,87 +1,165 @@
-/*CSS Reset / Normalize*/
-/* Hemos disponibilizado el básico de reset de estilos. Si quieren, añadan más informaciones 
-en las secciones señaladas */
-
-:root{
-    /* Inserta la variable de los otros colores inspeccionando el exemplo de figma */
-    /*Se esforce para trabalhar com variáveis, é uma dica profissional valiosa*/
-   --cor-de-fundo: #F5F5F5;
-   --cor-de-link: #000;
+*, ::before, ::after{
+    margin: 2px;
+    padding: 2px;
+    box-sizing: border-box;
 }
+
 
 body {
     box-sizing: border-box;
-    background-color: var(--cor-de-fundo) ;
+    background-color: #d0e2f9 ;
     font-family: 'Raleway';
     margin: 0;
     padding: 0;
     line-height: 1;
 }
+
 ol, ul,li {
     list-style: none;
 }
+
 a{
     text-decoration: none;
     color: var(--cor-de-link);
 }
 
-/*En este desafío nosostros gustaríamos que ustedes intentaran utilizar la metodología BEM. 
-
-Lo que es el BEM?
-
-BEM (Bloque, Elemento, Modificador) es un enfoque basado en componentes para el 
-desarrollo web. La idea detrás de esto es dividir la interfaz de usuario en bloques
-independientes. Esto hace que el desarrollo de la interfaz sea fácil y rápido, incluso
-con una interfaz de usuario compleja, y permite la reutilización del código existente sin copiar y pegar.
-
-Enlace de la documentación oficial!
-https://en.bem.info/methodology/quick-start/*/
-
 /*Sección Menu*/
 
 section.menu{
-
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 20px;
+    padding-left: 5%;
+    padding-right: 5%;
+    font-weight: bold;
+    h3{
+        color: #095cc5;    
+    }
+    ul li{
+        display: inline-block;
+        padding: 0px 20px;            
+    }
 }
 
 /*Sección Title*/
 
 section.title{
+    width: 600px;
+    height: 500px;
+    overflow: hidden;
+    position: relative;
+    margin: 10px auto;
+    border-radius: 20px;
+    /*box-shadow: 5px 8px 12px black;*/
+    text-align: justify;
+    .title__profile{
+        width: 300px;
+        height: auto;
+        overflow: hidden;
+        position: relative;
+        margin: 20px auto;
+        border-radius: 10px;
+        box-shadow: 5px 8px 12px black;     
+        top: 50%;
+        left: 25%;  
+    }
+    ul li{
+        display: inline-block;
+        padding: 0px 20px; 
+        color: #1db924;       
+    }
 
 }
 
 /*Sección About*/
 
 section.about{
+    
+    width: 800px;
+    height: auto;
+    overflow: hidden;
+    position: relative;
+    margin: 10px auto;
+    border-radius: 20px;
+    box-shadow: 5px 8px 12px black;
+    .about__paragraph{
+        text-align: justify;
 
+    }
 }
+section.groupsh{
+    width: 400px;
+    height: 800px;
+    float: inline-start;
+
+
+
+    section.skills{
+    width: 300px;
+    height: auto;
+    left: 80px;
+    overflow: hidden;
+    position: relative;
+    margin: auto;
+    border-radius: 20px;
+    box-shadow: 5px 8px 12px black;
+    ul li{      
+        display: flex;
+        padding:0px 20px;               
+    }
+    
+}
+
 
 /*Sección Hobbies*/
 
 section.hobbies{
-    
+    width: 300px;
+    height: auto;
+    left: 80px;
+    overflow: hidden;
+    position: relative;
+    margin: 10px auto;
+    border-radius: 20px;
+    box-shadow: 5px 8px 12px black;
+    ul li{      
+        display: flex;
+        padding:0px 20px;               
+    }    
 }
-
+}
 /* Experiencia Académica*/
 
 section.academic{
-
+    width: 400px;
+    height: auto;
+    overflow: hidden;
+    position: relative;
+    margin: 10px auto;
+    border-radius: 20px;
+    box-shadow: 5px 8px 12px black;
+    
 }
-
-/* experiencia*/
-
-section.experience{
-
-}
-
 /*Contacto*/
 
 section.formcontato{
+
+    width: 800px;
+    height: auto;
+    overflow: hidden;
+    position: relative;
+    margin: 10px auto;
+    border-radius: 20px;
+    box-shadow: 5px 8px 12px black;
 
 }
 
 /*footeer*/
 
 section.footer{
+text-align: right;
+
    
 }
 
